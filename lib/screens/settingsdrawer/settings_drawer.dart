@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SettingsDrawer extends StatelessWidget {
-  const SettingsDrawer({super.key});
+  SettingsDrawer({super.key});
 
+  bool newvalue = true;
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -70,12 +71,14 @@ class SettingsDrawer extends StatelessWidget {
               )),
         ),
         Divider(height: 10),
-        const ListTile(
+        ListTile(
           leading: Icon(Icons.notifications, color: Colors.white),
-          title: Text(
-            'Notification',
-            style: TextStyle(color: Colors.white),
-          ),
+          title: Text('Notification', style: TextStyle(color: Colors.white)),
+          trailing: Switch(
+              value: newvalue,
+              onChanged: (newvalue) {
+                newvalue = false;
+              }),
         ),
         const Divider(
           height: 10,

@@ -24,7 +24,7 @@ class _NavigationPageState extends State<NavigationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const SettingsDrawer(),
+      drawer: SettingsDrawer(),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 10, 10, 10),
         shape: const RoundedRectangleBorder(

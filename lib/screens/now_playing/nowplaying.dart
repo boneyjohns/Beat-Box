@@ -74,7 +74,7 @@ class _NowplayingState extends State<Nowplaying> {
             ),
           ),
           title: Text(
-            'BEET BOX',
+            'BEAT BOX',
             style: GoogleFonts.alfaSlabOne(
                 fontSize: 32,
                 color: const Color.fromARGB(255, 10, 141, 180),
